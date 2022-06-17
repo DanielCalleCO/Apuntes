@@ -1,0 +1,76 @@
+<!-- La primer página que se crea es index.html -->
+<!-- * Dentro de HTML hay normas que instituyen el uso de minusculas para los tags, sin embargo, si se usa mayuculas, el resultado no cambiará -->
+<!DOCTYPE html>
+<!--Esta etiqueta le indica al navegador que todo lo que voy a escribir esta en formato HTML5 -->
+<html lang="es">
+    <!-- Esta etiqueta le indica al navegador el idioma en que va a estar escrita la página -->
+    <head>
+        <!--Dentro de head va a ir todo lo que es importante para el navegador para cargar el proyecto pero que NO es visual para el usuario, ejemplos: la fuente de la letra, servidores, enlaces externos..etc -->
+        <meta charset="UTF-8" />
+        <!-- Es una etiqueta que se autocierra. UTF-8 es un standard de escritura que contiene todos los caracteres del español como las ñ, los acentos e incluso los EMOJIS-->
+        <meta
+            name="description"
+            content="Aquí va la descripción del contenido de esta página"
+        />
+        <!-- La descripción de la página ayuda a los buscadores a mostrar la información de nuestra página -->
+        <meta name="robots" content="index,follow" />
+        <!-- Este meta ayuda a los robots de los buscadores a buscar contenido en mi página para mejorar el posicionamiento. Si NO deseo que los robots entren a la misma, se puede indicar UNFOLLOW luego de index  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1,0" />
+        <!-- Este meta nos ayuda a ver mejor la página, por ejemplo, al abrirla desde un celular, nos agranda la letra automaticamente, cuando es responsive, de lo contrartio la letra saldrá más pequeña, dando una mala experiencia al usuario  -->
+        <title>Este es el index</title>
+        <!--En esta etiqueta se pone el nombre de la página que será visualizado en la parte superior del navegador, generalmente en la pestaña del explorador -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- Esta es la etiqueta que nos enlaza la hoja de estilos de CSS. En este caso se creó una carpeta al nivel del index y adentro está la hoja de estilos en css -->
+    </head>
+
+    <body>
+        <!-- En el body van todas las lineas de código que se van a ver en pantalla -->
+        <!-- Existen 2 tipos de etiquetas principalmente:
+    Las etiquetas DE CONTENIDO: Son las que llevan el texto, las imágenes, los videos y todo lo que vemos dentro de nuestra página.
+    y las etiquetas CONTENEDORAS: Son las etiquetas que contienen otras etiquetas y le dan la estructura a la página. -->
+        <header>
+            <!-- Esta es la etiqueta que va a contener todo el encabezado de la página web -->
+            <nav>
+                <!-- Dentro de esta etiqueta va a ir toda la barra de navegacíon de mi página-->
+            </nav>
+        </header>
+        <main>
+            <!-- Generalmente va debajo de header y es donde irá todo el contenido principal-->
+            <section>
+                <!--Es una manera de dividir varias secciones dentro del main, el header o el footer -->
+                <div>
+                    <!-- Es la etiqueta que nos ayuda a crear divisiones lógicas dentro de nuestra página para separar el contenido -->
+                </div>
+                <article>
+                    <!--Una section puede contener varios articles-->
+                    <p>
+                        <!-- Esta etiqueta sirve para generar parrafos separados. -->
+                        <img src="./imagen.jpg" />
+                        <!-- Esta etiqueta me inserta una imagen en el documento, esta etiqueta no necesita etiqueta de cierre -->
+                        <em>
+                            <!-- Letra italica o cursiva -->
+                        </em>
+                        <strong>
+                            <!-- letra en negrita para resaltar algo importante de un parrafo. -->
+                        </strong>
+                    </p>
+                </article>
+            </section>
+            <ul>
+                <!--Unordered list es la manera de listar items sin orden y solo con viñetas-->
+                <li>Item</li>
+                <!--(list item) De esta manera se ingresan los items de una lista -->
+            </ul>
+            <ol>
+                <li>Item</li>
+                <!--Orderd list es la manera de listar items de forma ordenada numericamente o alfabeticamente-->
+            </ol>
+            <a target="_blank" href="https://www.google.com"
+                >Google<!-- Aquí se pone la palabra que aparecerá como link-->
+                <!-- La etiqueta <a> sirve para incluir enlaces hacia otros sitios de nuestra página o páginas externas. El enlace se pone dentro de las comillas de href-->
+                <!-- Target me permite abrir el link en una pestaña adicional -->
+            </a>
+        </main>
+        <footer><!--En esta sección va todo el pie de la página --></footer>
+    </body>
+</html>
