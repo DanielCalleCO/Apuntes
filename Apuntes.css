@@ -1,6 +1,6 @@
 /* El archivo de CSS o Cascade Style Sheet, es el que se encarga de darle estilos para poder ver mejor mi documento de HTML, además también de permitirnos adaprtalo a diferentes tamaños de pantallas.*/
 
-/*! Definir estilos */
+/*! CONECTAR-DEFINIR LOS ESTILOS */
 /* Los estilos se pueden aplicar de 3 maneras */
 /**CSS inline*/
 /* Se pueden poner los estilos a una etiqueta dentro de la misma etiqueta:*/
@@ -29,10 +29,13 @@ p{
 
 /* La manera de definir las etiquetas es la siguiente: */
 
-/*! colores */
+/*! ESPECIFICIDAD */
+/* La especificidad es la manera mediante la cual los navegadores deciden qué valores de una propiedad CSS son más relevantes para un elemento y, por lo tanto, serán aplicados. */
+
+/*! COLORES */
 /* Los colores se pueden definir en rgb (255,0,255,80 los dos ultimos numeros son la transparencia, entonces se conocería como rgba), hexadecimal (#FF1177_ _ los dos ultimos digitos indican transparencia) */
 
-/*! Selectores */
+/*! SELECTORES */
 body {
     background-color: aliceblue;
     /* Esto va aplicar estilos a todo lo que esté dentro del BODY */
@@ -50,4 +53,16 @@ em strong {
 
 #ejemplo {
     display: flex;
+}
+
+/*! PROPIEDADES */
+.ejemplo {
+    transition: 1s background;
+    /* si agrego un selector de clase con HOVER, puedo realizar una transicisión en el background con tiempo */
+    transform: scale(1.2);
+    /* sirve para modificar el tamaño en escala, se puede usar con transition PERO se debe poner ALL luego de escoger el tiempo */
+    transform: rotate(2deg);
+    /* rota el objeto */
+    transform: scale(1.2) rotate(2deg);
+    /* rota y agranda el objeto */
 }

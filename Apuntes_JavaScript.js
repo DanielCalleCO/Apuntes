@@ -1,6 +1,5 @@
-{
-    /* <script type="module" src="./src/index.js"></script> */
-}
+// La conexión del HTML con el JavaScript se hará por regla general al FINAL del documento de HTML ANTES de cerrar el BODY ya que generalmente, los scripts suelen tener tiempos de carga más lentos. Para conectar un archivo .js con un documento de html, se agrega la siguiente linea:
+<script type="module" src="./src/index.js"></script>;
 
 // JavaScript es un lenguaje de programación creado para dar dinamismo a las páginas web. Es interpretado, orientado a objetos, debilmente tipado y dinámico:
 //* INTERPRETADO:
@@ -103,9 +102,24 @@ document.write(resultado);
 
 //!     Funciones predeterminadas
 //JS tiene algunas funciones predeterminadas, como document.write, o como console.log... Hay algunas más...
-// Math.random () => Nos da un número random entre 0 y 1. Se puede multiplicar por 10 o por 100 para números entre 1 y 10 o 1 y 100.
-// Math.round() => Nos redondea hacia arriba un número con decimales. //* Las funciones Math deben estar en MAYUSCULAS.
-// typeof _____ : Nos permite conocer el tipo de un valor.
+
+//* Math.random()
+// Nos da un número random entre 0 y 1. Se puede multiplicar por 10 o por 100 para números entre 1 y 10 o 1 y 100.
+
+//* Math.round()
+// Nos redondea hacia arriba un número con decimales.
+
+//* Las funciones Math deben estar en MAYUSCULAS.
+
+//* typeof _____
+// Nos permite conocer el tipo de un valor.
+
+//* .toFixed(2)
+// Me redondea el número a la cantidad de decimales que le pongamos dentro de parentesis.
+
+//* .style
+//  Sirve para que una vez se haya atrapado un elemento html y se haya guardado en una variable, se pueda modificar el estilo de este desde javascript.
+// Se debe agregar lo que queremos modificar: .color = "red"; .backgroundColor="green";
 
 //!-------------------------SCOPE---------------------------------
 
@@ -227,6 +241,11 @@ if (false) {
 } else {
     console.log("soy falso");
 }
+
+if (peso < 0 || peso > 1000) {
+    console.log("Peso incorrecto");
+}
+// Se puede usar esta sintaxis para incluir otra condición más a nuestro if, en este caso sería: si peso es menor que 0, o, peso es mayor que mil, ejecuta este códigio...
 
 //? Ej
 var edad = 18;
@@ -700,3 +719,20 @@ if (age < 18) {
     document.write("Eres mayor de edad, puedes pasar.");
 }
 // De esta manera se imprimiría en la página el texto deacuerdo a la condición que queramos.
+
+//!-------------------------DOM---------------------------------
+// El document es una es una variable muy importante de JavaScript, contiene el DOM (DOcument Object Model), que es como el navegador interpreta el HTML utilizado para renderizar la página. El navegador al leer su archivo HTML, crear una copia en memoria de aquel HTML y a partir de esa copia va diseñando la página. Esta copia es lo que llamamos DOM, siendo una representación en memoria del HTML. Por eso, cuando decimos que con JavaScript estamos manipulando el DOM, estamos alterando la representación en memoria de lo que el navegador interpretó.
+
+//!     QUERY SELECTOR
+// Para tomar valores de objetos en mi HTML, es necesario utilizar la propiedad document seguido de querySelector, lo que me permitirá modificar objetos llamandolos por sus etiquetas o por sus clases
+//? Ej:
+const title = document.querySelector("h1"); //por etiqueta
+const title2 = document.querySelector(".body__main--title"); //por clase
+
+//!     QUERY SELECTOR ALL
+// Me crea un arreglo con todos los tags que tengan el querySelector que le paso.
+
+//!     GET ELEMENT BY ID
+// De esta manera podemos traer un archivo, directamente por su ID
+//? Ej:
+const title3 = document.getElementById("title"); //por ID
