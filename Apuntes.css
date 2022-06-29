@@ -57,12 +57,28 @@ em strong {
 
 /*! PROPIEDADES */
 .ejemplo {
+    /** TRANSICIÓN */
     transition: 1s background;
-    /* si agrego un selector de clase con HOVER, puedo realizar una transicisión en el background con tiempo */
+    /* si agrego un selector sobre la misma clase, agregando :hover , puedo realizar un efecto de transición entre estilos */
+
+    /** TRANSFORMACIÓN */
     transform: scale(1.2);
     /* sirve para modificar el tamaño en escala, se puede usar con transition PERO se debe poner ALL luego de escoger el tiempo */
     transform: rotate(2deg);
     /* rota el objeto */
     transform: scale(1.2) rotate(2deg);
     /* rota y agranda el objeto */
+
+    /** SOMBRAS */
+    box-shadow: 10px 10px 30px 15px #000;
+    /* El primer dato es el eje X de la sombra con respecto a la imagen a la que le agregamos la sombra, el segundo es el eje Y, el tercero es la bifuminidad en pixeles, el cuarto parametro es "spread" o expansión de la sombra en pixeles, y el quinto parametro es el color. SE PUEDEN AGREGAR MÁS SOMBRAS O CUADROS ATRAS separados por comas */
+
+    /** OPACIDAD */
+    opacity: 0.3;
+}
+
+/*! MEDIA QUERY */
+/* Se usan para generar los diferentes estilos responsivos para presentar nuestra página en diferentes dispositivos */
+@media (max-width: 480px) {
+    /* A partir de aquí se comienza a aplicar los estilos responsivos que van a sobreescribirse en nuestra página al cumplir la condición, en este caso el max-width de 480px que indicamos al inicio */
 }

@@ -9,7 +9,7 @@
 
 // En la carpeta src siempre va una carpeta components
 
-// React ha sido diseñado en torno al "Tomic Design", el cual se asemeja al diseño del universo, desde la unidad más pequeña (atomo) hasta la más grande (página)
+// React ha sido diseñado en torno al "Atomic Design", el cual se asemeja al diseño del universo, desde la unidad más pequeña (atomo) hasta la más grande (página)
 
 //! COMPONENTS
 

@@ -21,6 +21,9 @@ git config --global user.name "Daniel Calle" git config --local user.name
 git config --global user.email "danielcalleco@gmail.com" git config --local
 user.email "danielcalleco@gmail.com"
 
+#* Representación visual del estado del GIT
+gitk
+
 #! GITHUB -->
 # Es una plataforma de desarrollo colaborativo para alojar proyectos (en la nube) utilizando el sistema de control de versiones Git, Además cuenta con una herramienta muy útil que es GitHub Pages donde podemos publicar nuestros proyectos estáticos (HTML, CSS y JS) gratis -->
 
@@ -136,6 +139,20 @@ git merge otroBranch
 # debemos estar dentro de MASTER y luego introducimos el siguiente comando llamando el branch que deseamos unir -->
 git rebase otroBranch
 # Con este metodo, aplicamos los commits de otra branch en el branch master-->
+
+#* Borrar un branch local
+git branch -d nombreDelBranch
+# EsGit no te permitirá borrar una branch en la que te encuentres ubicado, así que debes asegurarte primero de hacer checkout a una branch que no estes intentando borrar.La opción -d eliminará la branch únicamente si esta ha sido empujada y fusionada con la branch remota. Utiliza -D si deseas forzar la eliminación de una branch, incluso si aún esta no ha sido empujada o fusionada aún.
+
+#* Borrar un branch remoto
+git push origin --delete nombreDelBranch 
+# también se puede usar:
+git push origin :nombreDelBranch
+
+#* Sincronizar lista de branches
+git fetch -p 
+# -p significa "prune". Después de hacer el fetching, las branches que ya no existan en el repositorio remoto serán eliminadas en el repositorio local.
+
 
 #! STASH -->
 # Es una zona donde podremos guardar temporalmente avances que no queremos que se pierdan PERO que no funcionan aún como para ponerlos en un commit-->

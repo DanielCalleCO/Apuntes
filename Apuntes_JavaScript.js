@@ -119,7 +119,13 @@ document.write(resultado);
 
 //* .style
 //  Sirve para que una vez se haya atrapado un elemento html y se haya guardado en una variable, se pueda modificar el estilo de este desde javascript.
-// Se debe agregar lo que queremos modificar: .color = "red"; .backgroundColor="green";
+// Se debe agregar lo que queremos modificar:
+//?Ej:
+paciente.style.color = "red";
+paciente.backgroundColor = "green";
+
+//* .classList.add("body__main--testclass")
+// Sirve para añadir una clase a un elemento html.
 
 //!-------------------------SCOPE---------------------------------
 
