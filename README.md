@@ -14,7 +14,9 @@ Version: 3.0.0
 Publisher: Aaron Bond
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
 
-Para entender mediante colores y de mejor manera, cómo fueron diseñados los apuntes.
+Para entender mediante colores y de mejor manera, cómo fueron diseñados los apuntes. Y para que se vea por ejemplo así:
+
+![image](https://user-images.githubusercontent.com/100431019/179100262-620c8231-b14a-4189-8e4a-3ae827170e2e.png)
 
 3. Al momento de abrir el documento para estudiar, recomiendo usar el siguiente shortcut: "ALT+Z" o buscar en settings: View: Toggle Word Wrap y usarlo.
 
